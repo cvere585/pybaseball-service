@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pybaseball-service"
+version = "0.1.0"
+description = "A simple API to serve pybaseball data."
+authors = ["YourGitHubUsername"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+pybaseball = "*"
+pandas = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
